@@ -1,0 +1,17 @@
+Package: deconz
+Version: 2.05.21
+Architecture: armhf
+Depends: libqt5core5a, libqt5network5, libqt5widgets5, libqt5gui5, libqt5serialport5, libqt5websockets5, libqt5sql5, wiringpi, libcap2-bin, sqlite3
+Installed-Size: 16260
+Maintainer: Manuel Pietschmann <manuel.pietschmann@dresden-elektronik.de>
+Homepage: http://www.dresden-elektronik.de
+Priority: extra
+Section: non-free / misc
+Filename: pool/main/d/deconz/deconz_2.05.21_armhf.deb
+Size: 4930658
+SHA256: 63724494424fe38cb6c9ad7e61e125b3d2efce56c5de2a18596525c0818f2989
+SHA1: 4222d9805c7518302bb60adf13601749695a4455
+MD5sum: 05cb9ecdaa7a63a4853dddb4e8ea38cc
+Description: A generic ZigBee monitoring and control tool
+  The deCONZ application allows to monitor and control arbitrary ZigBee PRO based devices.
+

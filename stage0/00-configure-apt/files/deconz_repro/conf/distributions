@@ -1,0 +1,5 @@
+Codename: deconz
+Architectures: armhf
+Components: main
+Description: deCONZ - a ZigBee network management tool
+

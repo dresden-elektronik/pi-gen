@@ -15,7 +15,7 @@ on_chroot << EOF
 systemctl disable hwclock.sh
 systemctl disable nfs-common
 systemctl disable rpcbind
-systemctl disable ssh
+#systemctl disable ssh
 systemctl enable regenerate_ssh_host_keys
 EOF
 
@@ -50,3 +50,5 @@ usermod --pass='*' root
 EOF
 
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
+
+
