@@ -3,6 +3,21 @@
 _Tool used to create the raspberrypi.org Raspbian images_
 
 
+## Phoscon Image
+
+This pi-gen fork can be used to create the official Phoscon Gateway sd-card image.
+
+To build a **headless image** without desktop add a file `SKIP_IMAGES` to stage4 and remove that file from stage2.
+```bash
+rm stage2/SKIP_IMAGES
+touch stage4/SKIP_IMAGES
+```
+To build a **desktop image** with the deCONZ gui add a file `SKIP_IMAGES` to stage2 and remove that file from stage4.
+```bash
+rm stage4/SKIP_IMAGES
+touch stage2/SKIP_IMAGES
+```
+
 ## Dependencies
 
 pi-gen runs on Debian based operating systems. Currently it is only supported on
