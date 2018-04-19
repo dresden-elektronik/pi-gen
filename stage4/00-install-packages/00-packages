@@ -6,6 +6,4 @@ nodered
 libgl1-mesa-dri libgles1-mesa libgles2-mesa xcompmgr
 geany
 piclone
-wiringpi pigpio python-pigpio python3-pigpio raspi-gpio python-gpiozero python3-gpiozero python3-rpi.gpio
-libqt5core5a libqt5network5 libqt5widgets5 libqt5gui5 libqt5serialport5 libqt5websockets5 libqt5sql5 sqlite3
-deconz
+pigpio python-pigpio python3-pigpio raspi-gpio python-gpiozero python3-gpiozero python3-rpi.gpio
