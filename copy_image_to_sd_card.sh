@@ -1,3 +1,5 @@
+#! /bin/bash -e
+
 device=""
 img_name=$(cat config | grep IMG_NAME | cut -d '=' -f 2)
 img_date=""
