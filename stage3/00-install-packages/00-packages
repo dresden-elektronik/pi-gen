@@ -4,11 +4,11 @@ desktop-base
 git
 #omxplayer
 #raspberrypi-artwork
-#policykit-1
-#gvfs
-#rfkill
+policykit-1
+gvfs
+rfkill
 chromium-browser rpi-chromium-mods
-#gldriver-test
+gldriver-test
 #fonts-droid-fallback
 #fonts-liberation2
-#obconf
+obconf
