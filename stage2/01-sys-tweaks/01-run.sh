@@ -54,6 +54,7 @@ rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
 
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/dresden-elektronik"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/dresden-elektronik/deCONZ"
+install -m 644 files/config.ini "${ROOTFS_DIR}/home/pi/.local/share/dresden-elektronik/deCONZ/"
 
 echo "Phoscon-GW, V4_00, $(date +%Y-%m-%d)" > "${ROOTFS_DIR}/home/pi/.local/share/dresden-elektronik/deCONZ/gw-version"
 
