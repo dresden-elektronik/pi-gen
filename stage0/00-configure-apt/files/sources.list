@@ -2,7 +2,4 @@ deb http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-free rpi
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://archive.raspbian.org/raspbian/ stretch main contrib non-free rpi
 
-#deb [trusted=true] http://127.0.0.1/repos/apt/deconz deconz main
-#deb [trusted=true] http://127.0.0.1/deconz deconz main
-#deb [trusted=true] file:///home/chris/deconz_repro deconz main
-deb [trusted=yes] http://phoscon.de/repos/apt/deconz/deconz_repo deconz-beta main
+deb http://phoscon.de/repos/apt/deconz/deconz_repo deconz-beta main
