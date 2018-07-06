@@ -62,3 +62,6 @@ echo "Phoscon-GW, V4_00, $(date +%Y-%m-%d)" > "${ROOTFS_DIR}/home/pi/.local/shar
 ln -s "/etc/systemd/system/deconz.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz.service"
 ln -s "/etc/systemd/system/deconz-init.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz-init.service"
 
+# enable deconz-homebridge service
+ln -s "/usr/lib/systemd/system/deconz-homebridge.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz-homebridge.service"
+
