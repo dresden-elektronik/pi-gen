@@ -59,6 +59,5 @@ install -m 644 files/config.ini "${ROOTFS_DIR}/home/pi/.local/share/dresden-elek
 echo "Phoscon-GW, V4_00, $(date +%Y-%m-%d)" > "${ROOTFS_DIR}/home/pi/.local/share/dresden-elektronik/deCONZ/gw-version"
 
 # enable deconz autostart
-ln -s "/etc/systemd/system/deconz.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz.service"
-ln -s "/etc/systemd/system/deconz-init.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz-init.service"
-
+ln -s "/lib/systemd/system/deconz.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz.service"
+ln -s "/lib/systemd/system/deconz-init.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz-init.service"
