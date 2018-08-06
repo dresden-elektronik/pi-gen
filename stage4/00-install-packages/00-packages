@@ -2,7 +2,6 @@ debian-reference-en dillo x2x
 raspberrypi-net-mods raspberrypi-ui-mods
 pypy
 tree
-nodered
 libgl1-mesa-dri libgles1-mesa libgles2-mesa xcompmgr
 geany
 piclone
