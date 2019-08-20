@@ -64,4 +64,3 @@ ln -s "/lib/systemd/system/deconz-init.service" "${ROOTFS_DIR}/etc/systemd/syste
 
 # enable deconz-homebridge service
 ln -s "/lib/lib/systemd/system/deconz-homebridge.service" "${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/deconz-homebridge.service"
-
