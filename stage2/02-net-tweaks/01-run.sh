@@ -16,6 +16,9 @@ wpa_passphrase "${WPA_ESSID}" "${WPA_PASSWORD}" >> "/etc/wpa_supplicant/wpa_supp
 EOF
 fi
 
+install -v -d					"${ROOTFS_DIR}/etc/hostapd"
+install -v -m 600 files/hostapd.conf	        "${ROOTFS_DIR}/etc/hostapd/"
+
 # Disable wifi on 5GHz models
 mkdir -p "${ROOTFS_DIR}/var/lib/systemd/rfkill/"
 echo 1 > "${ROOTFS_DIR}/var/lib/systemd/rfkill/platform-3f300000.mmc:wlan"
