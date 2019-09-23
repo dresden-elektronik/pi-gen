@@ -53,6 +53,12 @@ on_chroot << EOF
 usermod --pass='*' root
 EOF
 
+on_chroot << EOF
+https_proxy="http://192.168.10.1:8080" wget https://project-downloads.drogon.net/wiringpi-latest.deb
+dpkg -i wiringpi-latest.deb
+EOF
+
+
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
 
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/dresden-elektronik"
