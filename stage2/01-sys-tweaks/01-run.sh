@@ -54,8 +54,21 @@ usermod --pass='*' root
 EOF
 
 on_chroot << EOF
+# remove proxy if not needed
 https_proxy="http://192.168.10.1:8080" wget https://project-downloads.drogon.net/wiringpi-latest.deb
 dpkg -i wiringpi-latest.deb
+EOF
+
+# set up rtc
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/rtc-source"
+install -m 644 files/Makefile "${ROOTFS_DIR}/home/pi/rtc-source/"
+install -m 644 files/rtc-pcf85063.service "${ROOTFS_DIR}/home/pi/rtc-source/"
+on_chroot << EOF
+cd "/home/pi/rtc-source/"
+echo "available kernels:"
+ls -l "/lib/modules"
+make
+make install
 EOF
 
 

@@ -27,3 +27,4 @@ ethtool
 vl805fw
 ntfs-3g
 pciutils
+i2c-tools raspberrypi-kernel-headers
